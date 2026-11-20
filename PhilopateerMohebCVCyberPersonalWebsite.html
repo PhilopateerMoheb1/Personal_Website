@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philopateer Moheb | Cybersecurity, Training & Mentoring</title>
+<meta name="description" content="Cybersecurity consulting, GRC and ISO compliance, hands-on training and career mentoring by Philopateer Moheb, Cairo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f4f6;--surface:#fff;--ink:#14213d;--muted:#566175;--line:#cfd6df;--accent:#0b6e7f;--accent-ink:#fff;--warm:#b45309;
+--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161f;--surface:#18212d;--ink:#e8edf3;--muted:#9aa7b8;--line:#2d3a4b;--accent:#5cc4d4;--accent-ink:#10161f;--warm:#f0b45a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+nav{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;justify-content:space-between;padding-top:.8rem;padding-bottom:.8rem;flex-wrap:wrap}
+nav b{font:700 1.05rem var(--head)}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hero{padding:4rem 0 3rem}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center}
+.photo{width:160px;height:160px;border-radius:8px;border:4px solid var(--accent);display:block}
+h1{font:800 clamp(2.1rem,5.5vw,3.9rem)/1.02 var(--head);letter-spacing:-.025em;margin:0 0 1rem}
+.lead{max-width:40rem;font-size:1.15rem;color:var(--muted);margin:0 0 1.5rem}
+.cta{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:500;border:1.5px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font:700 1.9rem/1.1 var(--head);letter-spacing:-.01em;margin:0 0 .6rem}
+.sub{color:var(--muted);margin:0 0 1.75rem;max-width:38rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.25rem}
+.box h3{font:700 1.15rem var(--head);margin:0 0 .5rem}
+.box p{margin:0 0 .6rem;color:var(--muted)}
+.box ul{margin:0;padding-left:1.1rem}
+.box li{margin:.25rem 0}
+.box.lead-box{border-left:5px solid var(--accent)}
+.value{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.value div{background:var(--surface);padding:1.1rem 1.25rem;display:grid;grid-template-columns:12rem 1fr;gap:1rem}
+.value b{font:700 1rem var(--head)}
+.value span{color:var(--muted)}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.25rem}
+ol.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:.7rem}
+ol.steps li::before{content:"Step " counter(s);display:block;font:700 .9rem var(--head);color:var(--warm)}
+ol.steps b{font:700 1.05rem var(--head)}
+ol.steps p{margin:.3rem 0 0;color:var(--muted);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}
+.tags li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.25rem .8rem;font-size:.93rem}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.5rem;display:grid;gap:1rem;max-width:40rem}
+.form label{display:grid;gap:.3rem;font-weight:500;font-size:.97rem}
+.form input,.form select,.form textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:.65rem .8rem;width:100%}
+.form input:focus-visible,.form select:focus-visible,.form textarea:focus-visible{outline:3px solid var(--accent);outline-offset:1px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form button{font:inherit;font-weight:500;cursor:pointer;border:0;background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:.8rem 1.2rem;justify-self:start}
+.form button:disabled{opacity:.6;cursor:wait}
+.hp{position:absolute;left:-9999px}
+#msg{margin:0;font-weight:500}
+#msg.ok{color:var(--accent)}#msg.err{color:var(--warm)}
+.social{margin-top:1.75rem}
+@media (max-width:40rem){.form .row{grid-template-columns:1fr}}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media (max-width:40rem){.hero .wrap{grid-template-columns:1fr}.value div{grid-template-columns:1fr;gap:.2rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Philopateer Moheb</b>
+<ul><li><a href="#services">Services</a></li><li><a href="#value">Value</a></li><li><a href="#training">Training</a></li><li><a href="#mentoring">Mentoring</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main>
+<header class="hero"><div class="wrap">
+<img class="photo" alt="Portrait of Philopateer Moheb" src="data:image/jpeg;base64,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">
+<div>
+<h1>I help organizations manage cyber risk, and help people build cyber careers.</h1>
+<p class="lead">Philopateer Moheb, GRC and cybersecurity specialist in Cairo. I turn security standards into practical controls, prepare teams for certification audits, and teach the skills the industry hires for.</p>
+<div class="cta"><a class="btn p" href="#contact">Work with me</a><a class="btn" href="#services">See services</a></div>
+</div>
+</div></header>
+
+<section id="services"><div class="wrap">
+<h2>Services</h2>
+<p class="sub">Four ways I can help, from a single assessment to an ongoing program.</p>
+<div class="cols">
+<div class="box lead-box"><h3>Governance, risk and compliance</h3><p>Get ready for, and pass, recognized standards.</p><ul><li>ISO/IEC 27001, 27002, 22301 and 42001 implementation</li><li>PCI DSS, PDPL and FRA compliance support</li><li>Policies, standards and procedures</li><li>Statement of Applicability, BIA and business continuity plans</li></ul></div>
+<div class="box"><h3>Risk and security assessments</h3><p>Know where you are exposed and what to fix first.</p><ul><li>Enterprise, third-party and privacy risk assessments</li><li>Gap assessments and threat profiling</li><li>Vulnerability assessments and CIS benchmark reviews</li><li>Attack surface monitoring and attack path analysis</li><li>Risk registers and Risk Treatment Plans</li></ul></div>
+<div class="box"><h3>Audit and assurance</h3><p>Independent checks that stand up to certification bodies.</p><ul><li>Internal audits against ISO standards</li><li>External audit support and readiness reviews</li><li>KPI, KRI and KCI frameworks to track control health</li></ul></div>
+<div class="box"><h3>Phishing simulations</h3><p>See how your people respond before a real attacker tests them.</p><ul><li>Realistic phishing campaigns tailored to your organization</li><li>Click, report and credential-submission metrics</li><li>Follow-up awareness training for the teams that need it</li><li>Clear reports with recommendations and trends over time</li></ul></div>
+<div class="box"><h3>Security operations support</h3><p>Technical foundations behind the paperwork.</p><ul><li>SIEM deployment, upgrades and health checks</li><li>Endpoint protection and network access control support</li><li>Zero Trust and AI governance guidance</li></ul></div>
+</div>
+</div></section>
+
+<section id="value"><div class="wrap">
+<h2>The value you get</h2>
+<p class="sub">What clients and learners take away from working with me.</p>
+<div class="value">
+<div><b>Certification confidence</b><span>I have guided organizations through implementation, internal audit and external audit, and supported successful certification engagements.</span></div>
+<div><b>Clear, usable documents</b><span>Policies, procedures and risk treatment plans written so teams can follow them, not just file them.</span></div>
+<div><b>Risk in business terms</b><span>Findings ranked by impact and likelihood, with a treatment plan, owner and follow-up.</span></div>
+<div><b>Experience across sectors</b><span>Risk and compliance work across multiple industries, from enterprise groups to government customers.</span></div>
+<div><b>Teaching that lands</b><span>My training received top student evaluation ratings for effectiveness and engagement.</span></div>
+</div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+<h2>How an engagement runs</h2>
+<p class="sub">The same sequence works for a first assessment or a full certification program.</p>
+<ol class="steps">
+<li><b>Assess</b><p>Understand scope, assets and current controls. Identify gaps and threats.</p></li>
+<li><b>Plan</b><p>Prioritize risks and agree a treatment plan with clear owners and timelines.</p></li>
+<li><b>Implement</b><p>Write policies and procedures, set up controls, and train the people who run them.</p></li>
+<li><b>Verify</b><p>Audit internally, fix findings, and support the external audit.</p></li>
+</ol>
+</div></section>
+
+<section id="training"><div class="wrap">
+<h2>Instruction and training sessions</h2>
+<p class="sub">Live sessions, labs and assessments for students, new graduates and corporate teams.</p>
+<div class="cols">
+<div class="box"><h3>What I teach</h3><ul><li>Risk management</li><li>Governance and compliance</li><li>Information security fundamentals</li><li>ISO/IEC 27001 and audit basics</li><li>Web application security and ethical hacking</li></ul></div>
+<div class="box"><h3>How I teach</h3><ul><li>Hands-on labs, not slides alone</li><li>Realistic assessments that show progress</li><li>Content built from real project work</li><li>Tailored to your audience and level</li></ul></div>
+<div class="box"><h3>Formats</h3><ul><li>Multi-week courses</li><li>Workshops and bootcamps</li><li>Security and phishing awareness sessions for staff</li><li>Custom team training</li></ul></div>
+</div>
+</div></section>
+
+<section id="mentoring"><div class="wrap">
+<h2>Mentoring and career guidance</h2>
+<p class="sub">I have mentored students on graduation projects and cybersecurity careers, and I like helping people find a path that fits them.</p>
+<div class="cols">
+<div class="box lead-box"><h3>Choose your direction</h3><p>GRC, SOC and SIEM, penetration testing or audit: understand each path and pick one.</p></div>
+<div class="box"><h3>Build your roadmap</h3><p>Which skills, labs and certifications to pursue, and in what order.</p></div>
+<div class="box"><h3>Get job ready</h3><p>CV review, portfolio and write-ups, interview preparation and project feedback.</p></div>
+</div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<h2>Expertise and credentials</h2>
+<p class="sub">B.Sc. Computer Engineering, Ain Shams University. Top 2% on TryHackMe.</p>
+<div class="cols">
+<div class="box"><h3>Certifications</h3><ul class="tags"><li>ISO 27001 Lead Implementer</li><li>ISO 27001 Lead Auditor</li><li>ISO 42001 Lead Implementer</li><li>GRCP</li><li>GRCA</li><li>IRMP</li><li>IPMP</li><li>IDPP</li><li>IAAP</li><li>IAIP</li><li>ICEP</li><li>ITGRC</li><li>eCPPT</li><li>QRadar SIEM Admin</li></ul></div>
+<div class="box"><h3>Technical skills</h3><ul class="tags"><li>Burp Suite Pro</li><li>Metasploit</li><li>Nmap</li><li>Wireshark</li><li>Nessus</li><li>Splunk</li><li>LogRhythm</li><li>Ghidra</li><li>Python</li><li>SQL</li><li>Java</li><li>C/C++</li></ul></div>
+<div class="box"><h3>Security topics</h3><ul class="tags"><li>SQL injection</li><li>XSS</li><li>SSRF</li><li>XXE</li><li>Access control</li><li>API testing</li><li>Firewalls</li><li>IDS/IPS</li><li>VPN</li><li>Cryptography</li></ul></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact me</h2>
+<p class="sub">Tell me what you need and I will reply with next steps. Choose the service you are interested in and add a few details.</p>
+<form class="form" id="cf" novalidate>
+<div class="row">
+<label>Full name<input name="name" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+</div>
+<div class="row">
+<label>Phone (optional)<input name="phone" type="tel" autocomplete="tel"></label>
+<label>Organization (optional)<input name="organization" autocomplete="organization"></label>
+</div>
+<label>Service requested
+<select name="service" required>
+<option value="">Select a service</option>
+<option>Governance, risk and compliance (ISO, PCI DSS, PDPL, FRA)</option>
+<option>Risk and security assessment</option>
+<option>Audit and assurance</option>
+<option>Phishing simulation</option>
+<option>Security operations support</option>
+<option>Training or instruction session</option>
+<option>Mentoring and career guidance</option>
+<option>Something else</option>
+</select></label>
+<label>Details<textarea name="message" rows="5" required placeholder="Your goals, timeline, team size, or any questions"></textarea></label>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit" id="sb">Send message</button>
+<p id="msg" role="status" aria-live="polite"></p>
+</form>
+<div class="cta social">
+<a class="btn" href="https://www.linkedin.com/in/philopateer-moheb-aims-i-isms-i-a-b1873a219/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/PhilopateerMoheb1">GitHub</a>
+</div>
+<script>
+(function(){
+var TO="philopateermohebfouadbarsom@gmail.com";
+var f=document.getElementById("cf"),m=document.getElementById("msg"),b=document.getElementById("sb");
+f.addEventListener("submit",function(e){
+e.preventDefault();
+var d=Object.fromEntries(new FormData(f).entries());
+if(!d.name||!d.email||!d.service||!d.message){m.className="err";m.textContent="Please fill in your name, email, service and details.";return;}
+if(d._honey){return;}
+delete d._honey;
+d._subject="New inquiry: "+d.service+" from "+d.name;
+d._template="table";
+d._replyto=d.email;
+b.disabled=true;m.className="";m.textContent="Sending...";
+function fallback(why){
+var body="Name: "+d.name+"\nEmail: "+d.email+"\nPhone: "+(d.phone||"")+"\nOrganization: "+(d.organization||"")+"\nService: "+d.service+"\n\n"+d.message;
+var href="mailto:"+TO+"?subject="+encodeURIComponent(d._subject)+"&body="+encodeURIComponent(body);
+m.className="err";
+m.innerHTML="";
+m.appendChild(document.createTextNode("The message could not be sent automatically"+(why?" ("+why+")":"")+". "));
+var a=document.createElement("a");a.href=href;a.textContent="Click here to send it from your email app instead.";m.appendChild(a);
+}
+fetch("https://formsubmit.co/ajax/"+TO,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(d)})
+.then(function(r){return r.json();})
+.then(function(j){
+if(j.success==="true"||j.success===true){m.className="ok";m.textContent="Thank you. Your message was sent and I will reply soon.";f.reset();}
+else{fallback(j.message||"");}
+})
+.catch(function(err){console.error(err);fallback(location.protocol==="file:"?"open the site from its web address, not from the file":"network or activation problem");})
+.then(function(){b.disabled=false;});
+});
+})();
+</script>
+</div></section>
+</main>
+
+<footer><div class="wrap">Philopateer Moheb Fouad. Cairo, Egypt. Available for consulting, training and mentoring.</div></footer>
+</body>
+</html>
